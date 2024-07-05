@@ -1,0 +1,15 @@
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.375rem 0;
+
+  .heading-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.1875rem;
+    width: 33.125rem;
+    button {
+      width: fit-content;
+    }
+  }
+}

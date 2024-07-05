@@ -5,8 +5,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Space Grotesk";
+  font-weight: 300;
 }
-
+:root {
+  --green: #b9ff66;
+  --dark: #191a23;
+  --gray: #f3f3f3;
+}
 html {
   font-size: 16px;
 }
@@ -18,17 +23,36 @@ h4 {
   font-weight: 500;
 }
 
+h1 {
+  font-size: 3.75em;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.875rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+p {
+  font-size: 1.125rem;
+}
+
 @media screen and (max-width: 1440px) {
   h1 {
-    font-size: 3.75em;
+    font-size: 2.6875rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
-  h2 {
-    font-size: 1.875rem;
+  h3 {
+    font-size: 1.625rem;
   }
-  h2 {
-    font-size: 1.25rem;
+  h4 {
+    font-size: 1.125rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }

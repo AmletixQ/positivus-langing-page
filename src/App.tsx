@@ -1,10 +1,11 @@
 import "./App.scss";
+import Heading from "./components/sections/Heading/Heading";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello world!</h1>
-    </div>
+    <main>
+      <Heading />
+    </main>
   );
 };
 

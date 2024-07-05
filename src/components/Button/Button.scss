@@ -1,0 +1,21 @@
+.button {
+  padding: 1.25rem 2.1875rem;
+  font-size: 1.25rem;
+  border-radius: 0.875rem;
+  color: black;
+  background-color: none;
+  border: 1px solid var(--dark);
+}
+
+.primary {
+  background-color: var(--dark);
+  color: white;
+}
+
+.secondary {
+  background-color: white;
+}
+
+.tertiary {
+  background-color: var(--green);
+}

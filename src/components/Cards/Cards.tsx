@@ -18,6 +18,7 @@ const Cards = () => {
           </Card.Title>
           <Link>
             <Link.Arrow circled={"black"} simple={"green"} />
+            <Link.P />
           </Link>
         </Card.Content>
         <Card.Illustration src={il1} alt="Il1" />
@@ -29,6 +30,7 @@ const Cards = () => {
           </Card.Title>
           <Link>
             <Link.Arrow circled={"black"} simple={"green"} />
+            <Link.P />
           </Link>
         </Card.Content>
         <Card.Illustration src={il2} alt="Il2" />
@@ -40,6 +42,7 @@ const Cards = () => {
           </Card.Title>
           <Link color={"white"}>
             <Link.Arrow circled={"white"} simple={"black"} />
+            <Link.P />
           </Link>
         </Card.Content>
         <Card.Illustration src={il3} alt="Il3" />
@@ -51,6 +54,7 @@ const Cards = () => {
           </Card.Title>
           <Link>
             <Link.Arrow circled={"black"} simple={"green"} />
+            <Link.P />
           </Link>
         </Card.Content>
         <Card.Illustration src={il6} alt="Il6" />
@@ -62,6 +66,7 @@ const Cards = () => {
           </Card.Title>
           <Link>
             <Link.Arrow circled={"black"} simple={"green"} />
+            <Link.P />
           </Link>
         </Card.Content>
         <Card.Illustration src={il4} alt="Il4" />
@@ -73,6 +78,7 @@ const Cards = () => {
           </Card.Title>
           <Link color={"white"}>
             <Link.Arrow circled={"white"} simple={"black"} />
+            <Link.P />
           </Link>
         </Card.Content>
         <Card.Illustration src={il5} alt="Il5" />

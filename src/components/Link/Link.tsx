@@ -8,6 +8,7 @@ const link = cva("", {
     color: {
       white: "white",
       black: "black",
+      green: "var(--green)",
     },
   },
 });

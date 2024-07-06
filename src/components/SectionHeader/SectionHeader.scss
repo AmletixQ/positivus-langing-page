@@ -1,0 +1,16 @@
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding-bottom: 5rem;
+
+  h1, h2, h3, h4 {
+    background-color: var(--green);
+    padding: 0.4375rem;
+    border-radius: 0.4375rem;
+  }
+
+  p {
+    width: 36.25rem;
+  }
+}

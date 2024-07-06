@@ -1,0 +1,25 @@
+.card {
+  width: 37.5rem;
+  padding: 3.125rem;
+  border: 1px solid black;
+  border-radius: 2.8125rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 14rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    padding: 0 0.4375rem;
+    border-radius: 0.4375rem;
+    max-width: fit-content;
+  }
+}

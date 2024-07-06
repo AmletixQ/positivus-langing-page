@@ -1,0 +1,25 @@
+.svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5625rem;
+  height: 2.5625rem;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+svg {
+  z-index: 2;
+}
+
+.black {
+  background-color: black;
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.white {
+  background-color: white;
+}

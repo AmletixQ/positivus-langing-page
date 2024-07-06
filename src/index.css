@@ -56,3 +56,19 @@ p {
     font-size: 1rem;
   }
 }
+
+.bc-green {
+  background-color: var(--green);
+}
+
+.bc-black {
+  background-color: black;
+}
+
+.bc-gray {
+  background-color: var(--gray);
+}
+
+.bc-white {
+  background-color: #fff;
+}

@@ -1,0 +1,27 @@
+.bigcard {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 6.25rem;
+  background-color: var(--gray);
+  padding: 3.75rem;
+  border-radius: 2.8125rem;
+
+  .bigcard-content {
+    width: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.625rem;
+
+    button {
+      width: fit-content;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 8.4375rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

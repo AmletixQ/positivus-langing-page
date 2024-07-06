@@ -1,10 +1,13 @@
-import { FC, PropsWithChildren } from "react";
+import { FC, HTMLAttributes, PropsWithChildren } from "react";
 import ArrowIcon, { ArrowIconProps } from "../Icons/Arrow/ArrowIcon";
 import "./Link.scss";
 import { VariantProps, cva } from "class-variance-authority";
 
 const link = cva("", {
   variants: {
+    type: {
+      reverse: "reverse",
+    },
     color: {
       white: "white",
       black: "black",
@@ -16,13 +19,16 @@ const link = cva("", {
 interface LinkComponent
   extends FC<PropsWithChildren & VariantProps<typeof link>> {
   Arrow: FC<ArrowIconProps>;
+  P: FC<HTMLAttributes<HTMLParagraphElement>>;
 }
 
-const Link: LinkComponent = ({ children, color }) => {
+const Link: LinkComponent = ({ children, color, type }) => {
   return (
-    <div className="link" style={{ color: color! }}>
+    <div
+      className={"link " + link({ type })}
+      style={{ color: link({ color }) }}
+    >
       {children}
-      <p>Learn more</p>
     </div>
   );
 };
@@ -30,5 +36,6 @@ const Link: LinkComponent = ({ children, color }) => {
 Link.Arrow = ({ simple, circled }) => (
   <ArrowIcon simple={simple} circled={circled} />
 );
+Link.P = (props) => <p {...props}>Learn more</p>;
 
 export default Link;

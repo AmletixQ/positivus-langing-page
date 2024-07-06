@@ -1,0 +1,15 @@
+.casestudiescard-container {
+  display: flex;
+  gap: 8rem;
+  justify-content: space-between;
+  padding: 4.375rem 3.75rem;
+  border-radius: 2.8125rem;
+  background-color: black;
+  color: white;
+
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}

@@ -5,6 +5,11 @@
   color: black;
   background-color: none;
   border: 1px solid var(--dark);
+
+  transition: 100ms;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .primary {

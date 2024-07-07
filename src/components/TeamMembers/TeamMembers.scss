@@ -1,0 +1,11 @@
+.teammembers-container {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+
+  button {
+    margin-left: auto;
+    padding-left: 4.75rem;
+    padding-right: 4.75rem;
+  }
+}

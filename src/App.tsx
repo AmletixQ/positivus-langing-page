@@ -1,8 +1,9 @@
-import CaseStudies from "./components/sections/CaseStudies/CaseStudies";
 import Heading from "./components/sections/Heading/Heading";
 import Services from "./components/sections/Services/Services";
-import "./App.scss";
+import CaseStudies from "./components/sections/CaseStudies/CaseStudies";
 import WorkingProcess from "./components/sections/WorkingProcess/WorkingProcess";
+import Team from "./components/sections/Team/Team";
+import "./App.scss";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Services />
       <CaseStudies />
       <WorkingProcess />
+      <Team />
     </main>
   );
 };

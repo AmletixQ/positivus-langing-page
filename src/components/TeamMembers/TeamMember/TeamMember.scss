@@ -1,0 +1,28 @@
+.member-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+
+  width: 24.1875rem;
+  padding: 2.5rem 2.1875rem;
+
+  border: 1px solid var(--dark);
+  border-radius: 2.8175rem;
+  box-shadow: 0 0.3125rem var(--dark);
+
+  .content {
+    position: relative;
+    display: flex;
+    gap: 1.25rem;
+
+    .member-info {
+      margin-top: auto;
+    }
+  }
+
+  .ln-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

@@ -63,13 +63,13 @@ const members: ITeamMembers[] = [
 
 const TeamMembers = () => {
   return (
-    <div className="teammembers-container">
+    <section className="teammembers-container">
       {members.map((member) => (
         <TeamMember {...member} />
       ))}
 
       <Button intent="primary">See all team</Button>
-    </div>
+    </section>
   );
 };
 

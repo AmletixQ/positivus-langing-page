@@ -1,5 +1,5 @@
 import Button from "../Button/Button";
-import LogoIcon from "../Icons/LogoIcon/LogoIcon";
+import LogoIcon from "../Icons/Logo/LogoIcon";
 import Navbar from "../Navbar/Navbar";
 import "./Header.scss";
 

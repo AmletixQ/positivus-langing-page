@@ -1,0 +1,73 @@
+.accordionitem {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  background-color: var(--gray);
+
+  border: 1px solid var(--dark);
+  border-radius: 2.8125rem;
+  box-shadow: 0 0.3125rem var(--dark);
+
+  padding: 2.5625rem 3.75rem;
+
+  transition: all 200ms;
+
+  hr {
+    border: 1px solid var(--dark);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 3.625rem;
+      height: 3.625rem;
+
+      border: 1px solid var(--dark);
+      border-radius: 100%;
+      background-color: var(--gray);
+
+      transition: all 200ms;
+
+      &:hover {
+        background-color: lightgray;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 1.5625rem;
+  }
+
+  hr,
+  p {
+    display: none;
+  }
+}
+
+.active {
+  background-color: var(--green);
+  hr,
+  p {
+    display: block;
+    animation: fadeIn 0.5s ease;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

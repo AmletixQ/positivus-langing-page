@@ -44,7 +44,7 @@ const slideItems: SlideItem[] = [
 ];
 
 const Slider = () => {
-  const [active, setActive] = useState<number>(0);
+  const [active, setActive] = useState<number>(1);
   const handlePrevClick = (e: MouseEvent) => {
     e.preventDefault();
     setActive((prev) => {

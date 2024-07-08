@@ -11,5 +11,26 @@
     button {
       width: fit-content;
     }
+
+    img {
+      height: 19.375rem;
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 2.5rem 0;
+    .heading-content {
+      button {
+        width: auto;
+      }
+
+      img {
+        display: block;
+      }
+    }
+    .desktop-illustration {
+      display: none;
+    }
   }
 }

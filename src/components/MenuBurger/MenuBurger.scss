@@ -1,0 +1,12 @@
+.menu-burger {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .dash {
+    width: 1.5rem;
+    height: 0.125rem;
+    background-color: 50%;
+    background-color: black;
+  }
+}

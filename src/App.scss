@@ -3,4 +3,9 @@ main {
   flex-direction: column;
   gap: 8.75rem;
   padding: 3.75rem 6.25rem 0 6.25rem;
+
+  @media screen and (max-width: 425px) {
+    padding: 1.875rem 1.25rem 0 1.25rem;
+    gap: 3.75rem;
+  }
 }

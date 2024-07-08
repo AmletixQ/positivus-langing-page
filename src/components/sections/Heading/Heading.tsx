@@ -16,9 +16,10 @@ const Heading = () => {
             online through a range of services including SEO, PPC, social media
             marketing, and content creation.
           </p>
+          <img src={Illustration} alt="Illustration" />
           <Button intent={"primary"}>Book a consultation</Button>
         </div>
-        <img src={Illustration} alt="Illustration" />
+        <img className="desktop-illustration" src={Illustration} alt="Illustration" />
       </div>
       <Partners />
     </section>

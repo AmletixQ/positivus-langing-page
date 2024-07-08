@@ -5,6 +5,7 @@ import WorkingProcess from "./components/sections/WorkingProcess/WorkingProcess"
 import Team from "./components/sections/Team/Team";
 import Testimonials from "./components/sections/Testimotional/Testimonials";
 import "./App.scss";
+import Contacts from "./components/sections/Contacts/Contacts";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <WorkingProcess />
       <Team />
       <Testimonials />
+      <Contacts />
     </main>
   );
 };

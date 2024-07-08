@@ -1,0 +1,15 @@
+.content-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 3.75rem 6.25rem 5rem 6.25rem;
+  border-radius: 2.1875rem;
+
+  background-color: var(--gray);
+  img {
+    position: absolute;
+    right: -26%;
+  }
+}

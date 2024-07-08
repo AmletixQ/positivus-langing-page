@@ -1,0 +1,93 @@
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.5rem;
+  width: 34.75rem;
+
+  .radiobutton-container {
+    display: flex;
+    gap: 2.1875rem;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+
+      input[type="radio"] {
+        appearance: none;
+        outline: none;
+        position: relative;
+        width: 1.75rem;
+        height: 1.75rem;
+
+        &::before {
+          content: "";
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: 1px solid var(--dark);
+
+          border-radius: 100%;
+          background-color: white;
+
+          width: 1.75rem;
+          height: 1.75rem;
+        }
+
+        &:checked::after {
+          content: "";
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          width: 1rem;
+          height: 1rem;
+
+          border-radius: 100%;
+
+          background-color: var(--green);
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3125rem;
+
+      input,
+      textarea {
+        padding: 1.125rem 1.875rem;
+        border: 1px solid var(--dark);
+        border-radius: 0.875rem;
+        resize: none;
+
+        &::placeholder {
+          font-size: 1.125rem;
+        }
+
+        &:focus {
+          outline: none !important;
+          border: 1px solid var(--green);
+        }
+      }
+
+      textarea {
+        height: 11.875rem;
+      }
+    }
+  }
+}

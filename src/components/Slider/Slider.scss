@@ -1,0 +1,40 @@
+.slider {
+  padding-top: 5.25rem;
+  padding-bottom: 4.25rem;
+
+  background-color: var(--dark);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7.75rem;
+
+  border-radius: 2.8175rem;
+  overflow-x: hidden;
+
+  .slides {
+    display: flex;
+    gap: 3.125rem;
+
+    transition: all 400ms;
+  }
+
+  .control {
+    display: flex;
+    gap: 11.875rem;
+    align-items: center;
+    button {
+      background-color: transparent;
+      border: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .arrow-left {
+      transform: rotate(180deg);
+    }
+  }
+}

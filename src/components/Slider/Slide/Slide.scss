@@ -1,0 +1,38 @@
+.slide {
+  width: 37.5rem;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+
+  .bubble {
+    position: relative;
+
+    padding: 3rem 3.25rem;
+    border: 1px solid var(--green);
+    border-radius: 2.8125rem;
+
+    .bubble-point {
+      background-color: var(--dark);
+
+      position: absolute;
+      left: 4rem;
+      top: 13.65rem;
+
+      width: 2rem;
+      height: 2rem;
+
+      border-bottom: 1px solid var(--green);
+      border-right: 1px solid var(--green);
+      transform: rotate(45deg);
+    }
+  }
+
+  .info {
+    padding-left: 5rem;
+    h4 {
+      color: var(--green);
+    }
+  }
+}

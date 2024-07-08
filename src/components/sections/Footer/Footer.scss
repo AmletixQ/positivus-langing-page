@@ -1,0 +1,90 @@
+footer {
+  color: white;
+  padding: 3.4375rem 3.75rem 3.125rem 3.75rem;
+
+  border-top-left-radius: 2.1825rem;
+  border-top-right-radius: 2.1825rem;
+
+  background-color: var(--dark);
+
+  .footer-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 4.125rem;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    form {
+      display: flex;
+      width: max-content;
+      flex-direction: row;
+      border-radius: 0.875rem;
+      background-color: #292a32;
+      padding: 3.625rem 2.5rem;
+
+      button {
+        font-size: 1.25rem;
+        width: max-content;
+      }
+
+      input {
+        border: 1px solid white;
+        border-radius: 0.875rem;
+        background-color: transparent;
+        padding: 1.375rem 2.1875rem;
+
+        &:focus {
+          outline: none !important;
+          border-color: var(--green);
+        }
+
+        &::placeholder {
+          color: white;
+          font-size: 1.125rem;
+        }
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6875rem;
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      h4 {
+        color: black;
+        padding: 0 0.4375rem;
+        border-radius: 0.4375rem;
+        background-color: var(--green);
+        width: fit-content;
+      }
+    }
+  }
+
+  .privacy-policy {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  a {
+    color: white;
+    font-size: 1.125rem;
+    text-decoration: underline;
+  }
+}

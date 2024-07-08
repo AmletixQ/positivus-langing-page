@@ -72,8 +72,8 @@ const Slider = () => {
         className="slides"
         style={{ transform: `translate(calc(650px * ${-active + 2}))` }}
       >
-        {slideItems.map((item) => (
-          <Slide {...item} />
+        {slideItems.map((item, idx) => (
+          <Slide key={idx} {...item} />
         ))}
       </div>
       <div className="control">

@@ -50,7 +50,7 @@ const Accordion = () => {
   return (
     <div className="accordion-container">
       {items.map((item, idx) => (
-        <AccordionItem order={idx + 1} {...item} />
+        <AccordionItem key={idx} order={idx + 1} {...item} />
       ))}
     </div>
   );

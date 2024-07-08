@@ -33,8 +33,8 @@ const Link: LinkComponent = ({ children, color, type }) => {
   );
 };
 
-Link.Arrow = ({ simple, circled }) => (
-  <ArrowIcon simple={simple} circled={circled} />
+Link.Arrow = ({ simple, circled, rotated }) => (
+  <ArrowIcon simple={simple} circled={circled} rotated={rotated} />
 );
 Link.P = (props) => <p {...props}>Learn more</p>;
 

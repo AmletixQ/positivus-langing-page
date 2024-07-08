@@ -7,7 +7,6 @@ const Slide: FC<SlideItem> = ({ summary, fullname, position }) => {
     <div className="slide">
       <div className="bubble">
         <p>{summary}</p>
-        <div className="bubble-point"></div>
       </div>
       <div className="info">
         <h4>{fullname}</h4>

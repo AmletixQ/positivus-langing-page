@@ -6,7 +6,7 @@ const ContactsForm = () => {
     <form className="">
       <div className="radiobutton-container">
         <div>
-          <input id="sayHi" type="radio" name="type-contact" />
+          <input id="sayHi" type="radio" name="type-contact" defaultChecked />
           <label htmlFor="sayHi">
             <p>Say Hi</p>
           </label>

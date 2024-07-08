@@ -17,7 +17,11 @@ const Cards = () => {
             <h3 className="bc-green">Search engine optimization</h3>
           </Card.Title>
           <Link>
-            <Link.Arrow circled={"black"} simple={"green"} className="arrow" />
+            <Link.Arrow
+              circled={"black"}
+              simple={"green"}
+              rotated={"rotated"}
+            />
             <Link.P />
           </Link>
         </Card.Content>
@@ -29,7 +33,11 @@ const Cards = () => {
             <h3 className="bc-gray">Pay-per-click advertising</h3>
           </Card.Title>
           <Link>
-            <Link.Arrow circled={"black"} simple={"green"} className="arrow" />
+            <Link.Arrow
+              circled={"black"}
+              simple={"green"}
+              rotated={"rotated"}
+            />
             <Link.P />
           </Link>
         </Card.Content>
@@ -41,7 +49,11 @@ const Cards = () => {
             <h3 className="bc-gray">Social Media Marketing</h3>
           </Card.Title>
           <Link color={"white"}>
-            <Link.Arrow circled={"white"} simple={"black"} className="arrow" />
+            <Link.Arrow
+              circled={"white"}
+              simple={"black"}
+              rotated={"rotated"}
+            />
             <Link.P />
           </Link>
         </Card.Content>
@@ -53,7 +65,11 @@ const Cards = () => {
             <h3 className="bc-green">Email Marketing</h3>
           </Card.Title>
           <Link>
-            <Link.Arrow circled={"black"} simple={"green"} className="arrow" />
+            <Link.Arrow
+              circled={"black"}
+              simple={"green"}
+              rotated={"rotated"}
+            />
             <Link.P />
           </Link>
         </Card.Content>
@@ -65,7 +81,11 @@ const Cards = () => {
             <h3 className="bc-gray">Content Creation</h3>
           </Card.Title>
           <Link>
-            <Link.Arrow circled={"black"} simple={"green"} className="arrow" />
+            <Link.Arrow
+              circled={"black"}
+              simple={"green"}
+              rotated={"rotated"}
+            />
             <Link.P />
           </Link>
         </Card.Content>
@@ -77,7 +97,11 @@ const Cards = () => {
             <h3 className="bc-green">Analytics and Tracking</h3>
           </Card.Title>
           <Link color={"white"}>
-            <Link.Arrow circled={"white"} simple={"black"} className="arrow" />
+            <Link.Arrow
+              circled={"white"}
+              simple={"black"}
+              rotated={"rotated"}
+            />
             <Link.P />
           </Link>
         </Card.Content>

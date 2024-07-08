@@ -8,6 +8,10 @@
   z-index: 1;
 }
 
+.rotated {
+  transform: rotate(-30deg);
+}
+
 svg {
   z-index: 2;
 }

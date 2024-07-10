@@ -1,23 +1,41 @@
-import {
-  FC,
-  HTMLAttributes,
-  ImgHTMLAttributes,
-  PropsWithChildren,
-} from "react";
+import { FC } from "react";
+import Link from "../../Link/Link";
 import "./Card.scss";
 
-interface CardComponent extends FC<PropsWithChildren & { className?: string }> {
-  Content: FC<HTMLAttributes<HTMLDivElement>>;
-  Title: FC<HTMLAttributes<HTMLHeadingElement>>;
-  Illustration: FC<ImgHTMLAttributes<HTMLImageElement>>;
+export interface CardProps {
+  title: string;
+  illustration: string;
+  cardColor: "bc-gray" | "bc-green" | "bc-black";
+  titleColor: "bc-green" | "bc-gray";
+  circleColor: "black" | "white";
+  linkColor: "green" | "black";
 }
 
-const Card: CardComponent = ({ children, className }) => {
-  return <div className={"card " + className}>{children}</div>;
+const Card: FC<CardProps> = ({
+  title,
+  illustration,
+  cardColor,
+  titleColor,
+  circleColor,
+  linkColor,
+}) => {
+  return (
+    <div className={`card ${cardColor}`}>
+      <div className="card-content">
+        <h3 className={titleColor}>{title}</h3>
+        <Link>
+          <Link.Arrow
+            circled={circleColor}
+            simple={linkColor}
+            rotated={"rotated"}
+          />
+          <Link.P />
+          <img src={illustration} alt="Il1" />
+        </Link>
+      </div>
+      <img className="card-illustration" src={illustration} alt="Il1" />
+    </div>
+  );
 };
-
-Card.Content = (props) => <div className="card-content" {...props} />;
-Card.Title = (props) => props.children;
-Card.Illustration = (props) => <img {...props} />;
 
 export default Card;

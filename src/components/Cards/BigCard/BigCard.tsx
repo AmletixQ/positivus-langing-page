@@ -11,7 +11,7 @@ const BigCard = () => {
           Contact us today to learn more about how our digital marketing
           services can help your business grow and succeed online.
         </p>
-        <Button intent={"primary"}>Get your free proposal</Button>
+        <Button intent={"primary"}>Get your proposal</Button>
       </div>
 
       <img src={il7} alt="il7" />

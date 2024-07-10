@@ -13,6 +13,11 @@
     flex-direction: column;
     justify-content: space-between;
     width: 14rem;
+
+    @media screen and (max-width: 425px) {
+      width: auto;
+      gap: 1.6875rem;
+    }
   }
 
   h1,
@@ -21,6 +26,28 @@
   h4 {
     padding: 0 0.4375rem;
     border-radius: 0.4375rem;
-    max-width: fit-content;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 24.375rem;
+    padding: 3.125rem;
+
+    p {
+      display: none;
+    }
+
+    .card-illustration {
+      display: none;
+    }
+
+    img {
+      height: 8rem;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }

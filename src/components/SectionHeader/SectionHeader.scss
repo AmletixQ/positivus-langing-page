@@ -13,4 +13,14 @@
   p {
     width: 36.25rem;
   }
+
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+
+    p {
+      width: auto;
+      text-align: center;
+    }
+  }
 }

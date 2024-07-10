@@ -3,6 +3,7 @@ import "./LogoIcon.scss";
 const LogoIcon = ({ color }: { color: "black" | "white" }) => {
   return (
     <svg
+      className="logoicon"
       width="220"
       height="36"
       viewBox="0 0 220 36"

@@ -1,5 +1,5 @@
 .menu-burger {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.5rem;
 
@@ -8,5 +8,9 @@
     height: 0.125rem;
     background-color: 50%;
     background-color: black;
+  }
+
+  @media screen and (max-width: 425px) {
+    display: flex;
   }
 }

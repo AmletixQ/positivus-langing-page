@@ -139,6 +139,10 @@ footer {
     color: white;
     font-size: 1.125rem;
     text-decoration: underline;
+
+    @media screen and (max-width: 425px) {
+      text-decoration: none;
+    }
   }
 
   @media screen and (max-width: 425px) {

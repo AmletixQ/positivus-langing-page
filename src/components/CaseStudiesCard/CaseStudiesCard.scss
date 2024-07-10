@@ -11,5 +11,23 @@
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+
+    @media screen and (max-width: 425px) {
+      background-color: black;
+      border-radius: 2.8125rem;
+
+      padding: 2.625rem 3.125rem;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    background-color: transparent;
+    flex-direction: column;
+    padding: 0;
+    gap: 1.25rem;
+
+    hr {
+      display: none;
+    }
   }
 }

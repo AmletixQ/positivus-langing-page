@@ -10,4 +10,11 @@ nav {
       text-decoration: underline;
     }
   }
+
+  @media screen and (max-width: 425px) {
+    align-items: center;
+
+    flex-direction: column;
+    gap: 0.9375rem;
+  }
 }

@@ -30,7 +30,7 @@ const Footer = () => {
             <Button intent={"tertiary"}>Subscribe to news</Button>
           </form>
         </div>
-
+        <SocialIcons />
         <hr />
         <div className="privacy-policy">
           <p>© 2023 Positivus. All Rights Reserved.</p>

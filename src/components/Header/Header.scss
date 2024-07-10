@@ -8,10 +8,8 @@
     gap: 2.5rem;
     justify-content: center;
     align-items: center;
-  }
 
-  @media screen and (max-width: 425px) {
-    .header-navbar {
+    @media screen and (max-width: 425px) {
       display: none;
     }
   }

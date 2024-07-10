@@ -2,6 +2,7 @@ import { MouseEvent, useState } from "react";
 import Dots from "../Dots/Dots";
 import ArrowIcon from "../Icons/Arrow/ArrowIcon";
 import Slide from "./Slide/Slide";
+import { styled } from "styled-components";
 import "./Slider.scss";
 
 export interface SlideItem {
@@ -43,6 +44,14 @@ const slideItems: SlideItem[] = [
   },
 ];
 
+const SlidesContainer = styled.div<{ $active: number }>`
+  transform: ${(props) => `translate(calc(650px * ${-props.$active + 2}))`};
+
+  @media screen and (max-width: 425px) {
+    transform: ${(props) => `translate(calc(380px * ${-props.$active + 2}))`};
+  }
+`;
+
 const Slider = () => {
   const [active, setActive] = useState<number>(1);
   const handlePrevClick = (e: MouseEvent) => {
@@ -68,14 +77,11 @@ const Slider = () => {
 
   return (
     <div className="slider">
-      <div
-        className="slides"
-        style={{ transform: `translate(calc(650px * ${-active + 2}))` }}
-      >
+      <SlidesContainer $active={active} className="slides">
         {slideItems.map((item, idx) => (
           <Slide key={idx} {...item} />
         ))}
-      </div>
+      </SlidesContainer>
       <div className="control">
         <button className="arrow-left" onClick={handlePrevClick}>
           <ArrowIcon simple={"white"} />

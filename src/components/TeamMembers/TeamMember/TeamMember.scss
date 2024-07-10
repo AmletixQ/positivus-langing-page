@@ -25,4 +25,8 @@
     right: 0;
     top: 0;
   }
+
+  @media screen and (max-width: 425px) {
+    gap: 1.25rem;
+  }
 }
